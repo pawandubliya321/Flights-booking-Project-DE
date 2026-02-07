@@ -1,7 +1,7 @@
 {
     "env": "dev",
-    "gcs_bucket": "airflow-projetcs-pd-dev",
-    "bq_project": "project-ec0f66a5-2ead-447f-87e",
+    "gcs_bucket": "airflow-projetcs-p-dev",
+    "bq_project": "my-second-project-486710",
     "bq_dataset": "flight_data_dev",
     "tables": {
       "transformed_table": "transformed_flight_data_dev",

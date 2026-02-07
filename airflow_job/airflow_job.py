@@ -24,8 +24,8 @@ with DAG(
 
     # Fetch environment variables
     env = Variable.get("env", default_var="dev")
-    gcs_bucket = Variable.get("gcs_bucket", default_var="airflow-projetcs-gds-dev")
-    bq_project = Variable.get("bq_project", default_var="dev-sunset-468907-e9")
+    gcs_bucket = Variable.get("gcs_bucket", default_var="airflow-projetcs-p-dev")
+    bq_project = Variable.get("bq_project", default_var="my-second-project-486710")
     bq_dataset = Variable.get("bq_dataset", default_var=f"flight_data_{env}")
     tables = Variable.get("tables", deserialize_json=True)
 
@@ -70,7 +70,7 @@ with DAG(
         },
         "environment_config": {
             "execution_config": {
-                "service_account": "784230287441-compute@developer.gserviceaccount.com",
+                "service_account": "929622190541-compute@developer.gserviceaccount.com",
                 "network_uri": f"projects/{bq_project}/global/networks/default",
                 "subnetwork_uri": f"projects/{bq_project}/regions/us-central1/subnetworks/default",
             }

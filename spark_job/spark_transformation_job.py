@@ -22,7 +22,7 @@ def job_process(env, bq_project, bq_dataset, transformed_table, route_insights_t
         logger.info("Spark session initialized.")
 
         # Resolve GCS path based on the environment
-        input_path = f"gs://airflow-projetcs-pd-dev/flight-booking-analysis/source-{env}"
+        input_path = f"gs://airflow-projetcs-p-dev/flight-booking-analysis/source-{env}"
         logger.info(f"Input path resolved: {input_path}")
 
         # Read the data from GCS
